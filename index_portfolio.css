@@ -1,0 +1,13 @@
+body {
+  max-width: 100%;
+  /*font-family: "Courier Prime Regular";*/
+  font-size: 1em;
+}
+
+.container{
+  max-width: 1024px;
+}
+
+.icon-blue{
+  color: blue;
+}
