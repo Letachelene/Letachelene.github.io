@@ -1,6 +1,6 @@
 body {
   max-width: 100%;
-  /*font-family: "Courier Prime Regular";*/
+  font-family: "Dellmonte Sans";
   font-size: 1em;
 }
 
@@ -10,4 +10,33 @@ body {
 
 .icon-blue{
   color: blue;
+}
+
+#image_accueil{
+  width: 30%;
+  height: 10%;
+}
+
+#numero{
+  display: none;
+}
+
+#phone:hover #numero{
+  display: block;
+}
+
+#street{
+  display: none;
+}
+
+#place:hover #street{
+  display: block;
+}
+
+#mail{
+  display: none;
+}
+
+#mail-box:hover #mail{
+  display: block;
 }
