@@ -6,73 +6,90 @@
   <title>Mon portfolio</title>
   <meta name="description" content=" Mon parcours, mes expériences et mes travaux" />
   <meta name="copyright" content="© Laurent Poleo-Garnier" />
-  <link rel="stylesheet" href="index_portfolio.css"></link>
+  <!--<link rel="stylesheet" href="index_portfolio.scss"></link>-->
+  <link rel="stylesheet" type = "text/css" href="./stylesheets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script src="index_portfolio.js"></script>
 </head>
 
-<body class="yellow accent-4">
-  <div class="container s12 m12 l12">
+<body>
+  <div class="corpus">
 
-    <section class="col s12 m12 l12">
-        <div class="col s2 m2 l2">
-        <img id="image_accueil" class="circle responsive-img" src="image_accueil.jpg">
+    <header>
+      <div id="logo_row">
+        <div id="phone">
+          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse">
+          phone_android</i>
+          <span id="numero">"06 74 58 17 69"</span>
         </div>
-        <h1>Hélène Le Tac</h1>
-        <h2>Développeuse Front-End</h2>
-        <p>Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche
-        Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche</p>
 
-  <div class="row valign-wrapper col s10 m10 l0">
-    <div id="phone">
-      <i class="material-icons medium icon-blue btn-floating btn-large yellow accent-4 pulse">
-      phone_android</i>
-      <span id="numero">"06 74 58 17 69"</span>
-    </div>
+        <div id="place">
+          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse">place</i>
+          <span id="street">"16 rue Pierre-Fontaine 75009 Paris"</span>
+        </div>
 
-    <div id="place">
-      <i class="material-icons medium icon-blue btn-floating btn-large yellow accent-4 pulse">place</i>
-      <span id="street">"16 rue Pierre-Fontaine 75009 Paris"</span>
-    </div>
+        <div id="mail-box">
+          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse">email</i>
+          <span id="mail">"contact.heleneletac@gmail.com"</span>
+        </div>
+          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse">menu</i>
+          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse"><a href="https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-le-tac-178456/">
+            <img class="btn-floating btn-large orange accent-4" src="logo_linkedin.png"></a>
+          </i>
+        </div>
+    </header>
 
-    <div id="mail-box">
-      <i class="material-icons medium icon-blue btn-floating btn-large yellow accent-4 pulse">email</i>
-      <span id="mail">"contact.heleneletac@gmail.com"</span>
-    </div>
+    <section id="accueil">
+        <p><img class="circle responsive-img" src="image_accueil.jpg"></p>
 
-    <i class="material-icons medium icon-blue btn-floating btn-large yellow accent-4 pulse">menu</i>
-</div>
-</section>
+        <div id="about">
+          <h1>Hélène Le Tac</h1>
+          <h2>Développeuse Front-End</h2>
+          <p>Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche
+          Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche</p>
+          <div id="logo_bouton">
+          <p><img src="LOGO_CODING_ACADEMY_PNG.png"></p>
+          <a class="btn waves-effect waves-light black"><i class="material-icons right">send</i>Mon CV</a>
+          </div>
+        </div>
 
-<section class="container s12 m12 l12">
-    <h2>Expérience professionnelle</h2>
-  <div>
-    <h3>Journaliste, éditrice et photographe</h3>
-    <img id="gallimard" class="responsive-img" src="LogoGuidesGallimard.png">
-  </div>
+    </section>
 
-  <div>
-  <img id="hachette" class="responsive-img" src="logo-hachette-education.jpg">
-  <h3>Responsable de projets numériques</h3>
-  </div>
+    <section id="block_computing">
+      <div id="block_techno">
+        <p><img src="logo_HTML5.png"></p>
+        <p><img src="logo_CSS3.jpg"></p>
+        <p><img src="Logo_javascript.png"></p>
+        <p><img src="Logo_angular.png"></p>
+        <p><img src="react-logo.png"></p>
+        <p><img src="php-logo.png"></p>
+      </div>
+      <div id="block_projects">
+        <h3>Quelques travaux réalisés pendant la formation...</h3>
+          <div id="line_projects1">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+          <div id="line_projects2">
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+          </div>
+      </div>
 
-  <div>
-  <h3>Éditrice et auteure</h3>
-  <img id="michelin" class="responsive-img" src="logo-Michelin.jpg">
-  </div>
 
-  <div>
-    <img id="michelin" class="responsive-img" src="index.jpg">
-    <h3>Responsable d’un journal on-line</h3>
-  </div>
-</section>
 
-<section>
 
-</section>
+    </section>
 
   </div>
 </body>
+
 </html>

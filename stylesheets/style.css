@@ -1,0 +1,132 @@
+body {
+  max-width: 100%;
+  font-family: arial;
+  font-size: 1em;
+}
+
+.corpus {
+  max-width: 100%;
+}
+
+header {
+  background-color: #ff6d00;
+  width: 100%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 2.5em !important;
+  /*font-family: "lemoneign";*/
+}
+
+h2 {
+  font-size: 3em !important;
+}
+
+#logo_row {
+  display: flex;
+  flex-direction: row;
+  background-color: #ff6d00;
+}
+
+#accueil {
+  background-color: #ffd600;
+  width: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: row;
+}
+#accueil img {
+  width: 60%;
+}
+#accueil #about {
+  width: 60%;
+}
+#accueil #about img {
+  width: 30%;
+}
+#accueil #about #logo_bouton {
+  display: flex;
+  flex-direction: row;
+}
+#accueil #about #logo_bouton a {
+  color: white;
+  width: 30%;
+  height: 20%;
+  border-radius: 45%;
+  font-size: 1.3em;
+  margin-top: 5%;
+  padding: 1.2%;
+}
+
+#numero {
+  display: none;
+}
+
+#phone:hover #numero {
+  display: block;
+}
+
+#street {
+  display: none;
+}
+
+#place:hover #street {
+  display: block;
+}
+
+#mail {
+  display: none;
+}
+
+#mail-box:hover #mail {
+  display: block;
+}
+
+#block_computing {
+  width: 100%;
+  /*#block_techno{
+    background-color: $background_techno;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }*/
+}
+#block_computing #block_projects {
+  background-color: #ccff90;
+}
+#block_computing #block_projects #line_projects1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#block_computing #block_projects #line_projects2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#block_computing #block_projects button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
+  margin: 2%;
+}
+#block_computing #block_projects button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: medium;
+  border-color: white;
+  margin: 2%;
+}
+
+/*# sourceMappingURL=style.css.map */
