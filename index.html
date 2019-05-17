@@ -7,10 +7,10 @@
   <meta name="description" content=" Mon parcours, mes expériences et mes travaux" />
   <meta name="copyright" content="© Laurent Poleo-Garnier" />
   <!--<link rel="stylesheet" href="index_portfolio.scss"></link>-->
-  <link rel="stylesheet" type = "text/css" href="./stylesheets/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type = "text/css" href="./stylesheets/style.css">
   <script src="index_portfolio.js"></script>
 </head>
 
@@ -18,76 +18,226 @@
   <div class="corpus">
 
     <header>
-      <div id="logo_row">
-        <div id="phone">
-          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse">
+      <div id="logo_row" style="padding-left: 45%;">
+        <div id="phone" style="margin: 1%;">
+          <i class="material-icons center btn-floating btn-large pulse black"
+          style="font-size:38px; line-height: 56px;">
           phone_android</i>
-          <span id="numero">"06 74 58 17 69"</span>
+          <p class="card-panel teal white" id="numero"><span class="card-content">06 74 58 17 69</span></p>
         </div>
 
-        <div id="place">
-          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse">place</i>
-          <span id="street">"16 rue Pierre-Fontaine 75009 Paris"</span>
+        <div id="place" style="margin: 1%;">
+          <i class="material-icons center btn-floating btn-large pulse black"
+          style="font-size:38px; line-height: 56px;">place</i>
+          <p class="card-panel teal white" id="street"><span class="card-content">16 rue Pierre-Fontaine 75009 Paris</span></p>
         </div>
 
-        <div id="mail-box">
-          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse">email</i>
-          <span id="mail">"contact.heleneletac@gmail.com"</span>
+        <div id="mail-box" style="margin: 1%;">
+          <i class="material-icons center btn-floating btn-large pulse black"
+          style="font-size:38px; line-height: 56px;">email</i>
+          <p class="card-panel teal white" id="mail"><span class="card-content">contact.heleneletac@gmail.com</span></p>
         </div>
-          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse">menu</i>
-          <i class="material-icons medium icon-blue btn-floating btn-large orange accent-4 pulse"><a href="https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-le-tac-178456/">
-            <img class="btn-floating btn-large orange accent-4" src="logo_linkedin.png"></a>
-          </i>
+
+        <div style="margin: 1%;">
+          <i class="material-icons center btn-floating btn-large black"
+          style="font-size:38px; line-height: 56px;">menu</i>
+        </div>
+
+        <div style="margin-left: 1%; margin-top: 0.5%;">
+          <a href="https://www.linkedin.com/in/h%C3%A9l%C3%A8ne-le-tac-178456/">
+          <img class="btn-floating btn-large orange accent-4" src="./images/logo_linkedin.png"></a>
+        </div>
         </div>
     </header>
 
     <section id="accueil">
-        <p><img class="circle responsive-img" src="image_accueil.jpg"></p>
+        <p><img class="circle responsive-img" src="./images/image_accueil.jpg"></p>
 
         <div id="about">
           <h1>Hélène Le Tac</h1>
           <h2>Développeuse Front-End</h2>
           <p>Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche
-          Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche</p>
+          Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche
+          Conception à part entière d'un projet web : CMS, langages script, SEO...</p>
           <div id="logo_bouton">
-          <p><img src="LOGO_CODING_ACADEMY_PNG.png"></p>
-          <a class="btn waves-effect waves-light black"><i class="material-icons right">send</i>Mon CV</a>
+          <p><img src="./images/LOGO_CODING_ACADEMY_PNG.png"></p>
+          <a class="btn waves-effect waves-light black"><i class="material-icons right">
+            send</i>Mon CV</a>
+            <!--<iframe src="CVEPI_DEV_2019.pdf"></iframe>-->
           </div>
         </div>
 
     </section>
 
-    <section id="block_computing">
-      <div id="block_techno">
-        <p><img src="logo_HTML5.png"></p>
-        <p><img src="logo_CSS3.jpg"></p>
-        <p><img src="Logo_javascript.png"></p>
-        <p><img src="Logo_angular.png"></p>
-        <p><img src="react-logo.png"></p>
-        <p><img src="php-logo.png"></p>
+    <section class="block_computing">
+      <div class="block_techno">
+        <h3>Compétences</h3>
+        <div class="sous-block-techno">
+        <p><img class="logo_techno" src="./images/logo_HTML5.png"></p>
+        <p><img class="logo_techno" src="./images/logo_CSS3.jpg"></p>
+        <p><img class="logo_techno" src="./images/Logo_javascript.png"></p>
+        <p><img class="logo_techno" src="./images/Logo_angular.png"></p>
+        <p><img class="logo_techno" src="./images/logo_react.png"></p>
+        <p><img class="logo_techno" src="./images/php-logo.png"></p>
+        </div>
       </div>
-      <div id="block_projects">
-        <h3>Quelques travaux réalisés pendant la formation...</h3>
-          <div id="line_projects1">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+      <div class="block_projects">
+        <h3>Quelques projets...</h3>
+          <div class="line_projects1">
+            <a href="./projets_example/Accessibility_Semantics/MAQUETTE_FORET.html">
+            <div class="block_projet">
+                <button id="maquette_foret"></button>
+                <div class="description_projet"><p>Description du projet</p></div>
+            </div>
+            </a>
+
+            <a href="./projets_example/Animation/animation_index.htm">
+            <div class="block_projet">
+              <button id="maquette_animation"></button>
+              <div class="description_projet"><p>Description du projet</p></div>
+            </div>
+            </a>
+
+            <a href="./projets_example/c1web104p6/materialize_batman.html">
+            <div class="block_projet">
+                <button id="maquette_materialize"></button>
+                <div class="description_projet"><p>Description du projet</p></div>
+            </div>
+            </a>
           </div>
-          <div id="line_projects2">
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-          </div>
-      </div>
 
+          <div class="line_projects2">
+            <a href="./projets_example/c1web104p9/gsap.html">
+            <div class="block_projet">
+                <button id="maquette_gsap"></button>
+                <div class="description_projet"><p>Description du projet</p></div>
+            </div>
+            </a>
 
+            <a href="./projets_example/my_snapchat/my_snapchat_Inscription.html">
+            <div class="block_projet">
+                <button id="maquette_snapchat"></button>
+                <div class="description_projet"><p>Description du projet</p></div>
+            </div>
+            </a>
 
+            <div class="block_projet">
+                <button id="maquette_spotify"></button>
+                <div class="description_projet"><p>Description du projet</p></div>
+            </div>
+        </div>
 
     </section>
+
+    <section class="block_formations">
+        <h3>Formations</h3>
+            <div class="sous_block_formations">
+              <article>
+              <h4>Développement Front-End<br>Formation Web & Go</h4>
+              <p>Coding Academy by Epitech, 94270 Le Kremlin-Bicêtre</p>
+              <p>Février-juin 2019</p>
+              </article>
+              <p class="logo_ecole1"><img src="./images/logo_coding_academy.png"></p>
+            </div>
+            <div class="sous_block_formations">
+              <p class="logo_ecole2"><img src="./images/universite_sceaux.png"></p>
+              <article>
+              <h4>Master 2 en Diplomatie et Administration des organisations internationales</h4>
+              <p>Université Paris-Sud XI, faculté Jean-Monnet</p>
+              <p>1994-1995</p>
+              </article>
+            </div>
+            <div class="sous_block_formations">
+              <article>
+              <h4>Master 1 en Droit des affaires</h4>
+              <p>Université Panthéon-Assas Paris II, 75006 Paris</p>
+              <p>1991-1993</p>
+              </article>
+              <p class="logo_ecole1"><img src="./images/universite_assas.png"></p>
+            </div>
+    </section>
+
+    <section class="block_formations" id="background">
+            <h3>Expériences professionnelles</h3>
+            <div class="sous_block_formations">
+              <article>
+              <h4>Journaliste-reporter et éditrice</h4>
+              <p>Éditions Gallimard-Loisirs, 75007 Paris</p>
+              <p>2001-2019</p>
+              </article>
+              <p class="logo_ecole1"><img src="./images/logo_gallimard2.png"></p>
+            </div>
+            <div class="carrousel">
+              <p>Carrousel: quelques exemples de guides illustrés, villes parcourues, textes et photos</p>
+            </div>
+            <div class="sous_block_formations">
+              <p class="logo_ecole2"><img src="./images/logo-hachette-education.jpg"></p>
+              <article>
+              <h4>Responsable de projets numériques</h4>
+              <p>Hachette Éducation, 92178 Vanves</p>
+              <p>Mai-novembre 2016</p>
+              </article>
+            </div>
+            <div class="sous_block_formations">
+              <article>
+              <h4>Éditrice et auteure</h4>
+              <p>Le Guide Vert de Michelin, 75007 Paris</p>
+              <p>2006-2009</p>
+              </article>
+              <p class="logo_ecole1"><img src="./images/logo-Michelin.jpg"></p>
+            </div>
+            <div class="sous_block_formations">
+              <p class="logo_ecole2"><img src="./images/bnp_paribas.jpg"></p>
+              <article>
+                <h4>Journaliste web</h4>
+                <p>Groupe Paribas, 75007 Paris</p>
+                <p>2000-2001</p>
+              </article>
+            </div>
+    </section>
+
+    <section class="block_hobbies">
+          <div>
+            <p>Danse moderne</p>
+          </div>
+          <div>
+            <p>Performances dans des vidéos d'art</p>
+          </div>
+          <div>
+            <p>Randonnée</p>
+          </div>
+          <div>
+            <p>Dessin</p>
+          </div>
+    </section>
+
+    <footer>
+      <div class="row block_form col s12">
+         <form method="POST" action="https://formspree.io/contact.heleneletac@gmail.com">
+           <div>
+             <div class="input-field col s12 etiquette">
+               <input id="first_name" type="text" name="name">
+               <label for="first_name">Nom</label>
+             </div>
+             <div class="input-field col s12 etiquette">
+               <input id="last_name" type="text" name="name">
+               <label for="last_name">Prénom</label>
+             </div>
+             <div class="input-field col s12 etiquette">
+                <input id="email" type="email" name="_replyto">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field col s12 etiquette">
+                <input id="input_text" type="text" name="message" data-length="30">
+                <label for="input_text">Message</label>
+              </div>
+              <div>
+                  <input type="text" name="subject" value="Sujet de votre message">
+              </div>
+                  <input type="submit" value="Envoyez">
+          </div>
+        </form>
+    </footer>
 
   </div>
 </body>

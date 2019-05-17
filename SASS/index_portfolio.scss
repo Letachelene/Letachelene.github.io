@@ -3,13 +3,13 @@
 
 body {
   max-width: 100%;
-  font-family: arial;
+  font-family: "Roboto-Regular";
   font-size: 1em;
 }
 
 @mixin bouton_capture{
-  width: 200px;
-  height: 200px;
+  width: 390px;
+  height: 390px;
   border-radius: 50%;
   border-style: solid;
   border-width: medium;
@@ -17,8 +17,13 @@ body {
   margin: 2%;
 }
 
+@mixin experiences($background){
+  background-color: $background;
+}
+
 .corpus{
   max-width: 100%;
+  display: block;
 }
 
 header{
@@ -27,22 +32,51 @@ header{
   padding: 1%;
   display: flex;
   flex-direction: row;
-}
 
-h1{
-  font-size: 2.5em !important;
-  /*font-family: "lemoneign";*/
-}
+      #logo_row{
+        display: flex;
+        flex-direction: row;
 
-h2{
-  font-size: 3em !important;
-}
+      }
 
-#logo_row{
-  display: flex;
-  flex-direction: row;
-  background-color: $orange_header;
-}
+    }
+
+h1  {
+    font-size: 2.5em !important;
+    /*font-family: "lemoneign";*/
+  }
+
+h2  {
+    font-size: 3em !important;
+  }
+
+  #numero{
+    display: none;
+    position: absolute;
+  }
+
+  #phone:hover #numero{
+    display: block;
+  }
+
+  #street{
+    display: none;
+    position: absolute;
+  }
+
+  #place:hover #street{
+    display: block;
+  }
+
+  #mail{
+    display: none;
+    position: absolute;
+  }
+
+  #mail-box:hover #mail{
+    display: block;
+  }
+
 
 #accueil{
   background-color: $yellow-background;
@@ -78,48 +112,57 @@ h2{
     }
 }
 
-#numero{
-  display: none;
-}
 
-#phone:hover #numero{
-  display: block;
-}
-
-#street{
-  display: none;
-}
-
-#place:hover #street{
-  display: block;
-}
-
-#mail{
-  display: none;
-}
-
-#mail-box:hover #mail{
-  display: block;
-}
-
-
-  #block_computing{
+  .block_computing{
     width: 100%;
-      /*#block_techno{
-        background-color: $background_techno;
+
+      .block_techno{
+        background-color: black;
         width: 100%;
         display: flex;
         flex-direction: row;
+        padding-top: 1%;
+        padding-bottom: 1%;
+
+            .sous-block-techno{
+              width: 50%;
+              display: flex;
+              flex-direction: row;
+              margin-right: 5%;
+            }
+
+            h3{
+              color: white;
+              width: 50%;
+              padding-left: 5%;
+            }
+        }
+
+        .logo_techno{
+          width: 100px;
+          height: 100px;
+          padding: 15%;
+        }
+
+
+      }
+      /*p{
+        width: 20%;
+        height: 20%;
+        padding: 2%;
       }*/
-      
-      #block_projects{
-        background-color: $background_projects;
-        #line_projects1{
+
+      .block_projects{
+        background-color: $orange_photoshop_background;
+        margin-top: -2.1%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        .line_projects1{
           width: 100%;
           display: flex;
           justify-content: center;
         }
-        #line_projects2{
+        .line_projects2{
           width: 100%;
           display: flex;
           justify-content: center;
@@ -127,9 +170,161 @@ h2{
 
         button{
           @include bouton_capture;
+          //background-image: url("./captures_projets/foret_cercle.png");
         }
         button{
           @include bouton_capture;
         }
+
+        /*.position_capture{
+          background-position: -32px -28px;
+        }*/
+
+        #maquette_foret{
+          background-image: url("../captures_projets/foret_cercle.png");
+          background-position: -32px -28px;
+        }
+
+        #maquette_animation{
+          background-image: url("../captures_projets/transat.png");
+        }
+
+        #maquette_materialize{
+          background-image: url("../captures_projets/batman_capture.png");
+        }
+
+        #maquette_gsap{
+          background-image: url("../captures_projets/capture_gsap_emoji.png");
+          background-position: -43px -30px;
+        }
+        #maquette_snapchat{
+          background-image: url("../captures_projets/capture_code_snaptchat.png");
+          background-position: -43px -30px;
+        }
+
+        #maquette_spotify{
+          background-image: url("../captures_projets/capture_logo_spotify.png");
+          background-position: -108px -107px;
+        }
+
+        .description_projet{
+          background-color: black;
+          opacity: 0.6;
+          width: 390px;
+          height: 390px;
+          border-radius: 50%;
+          overflow: hidden;
+          position: absolute;
+          top: 1.5%;
+          right: -1.8%;
+            p{
+              color: white;
+              text-align: center;
+              padding-top: 10%;
+            }
+
+          }
+
+          .description_projet:hover{
+            opacity: 0;
+          }
+
+        .block_projet{
+          position: relative;
+        }
+
+  }
+
+  .block_formations{
+    background-color: $light_orange_photoshop_background;
+    width: 100%;
+    padding-top: 0.1%;
+    padding-bottom: 3%;
+
+        h3{
+          width: 100%;
+        }
+        .sous_block_formations{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          padding-right: 15%;
+          padding-left: 15%;
+              h4{
+                font-size: 1.5em;
+              }
+              article{
+                width: 50%;
+              }
+
+              img{
+                width: 200px;
+                height: 150px;
+              }
+              .logo_ecole1{
+                width: 50%;
+                padding-left: 20%;
+              }
+
+              .logo_ecole2{
+                width: 50%;
+                padding-right: 70%;
+              }
+        }
+  }
+
+  #background{
+    background-color: $orange2_photoshop;
+  }
+
+  .carrousel{
+    width: 100%;
+    background-color: white;
+  }
+
+  .block_hobbies{
+    background-color: $rouge_photoshop_background;
+    margin-top: -1.1%;
+    padding: 3%;
+        p{
+          background-color: $darkorange_photoshop_background;
+          width: 15%;
+          color: white;
+          font-size: 1.4em;
+          border-radius: 20%;
+          padding: 2%;
+        }
+  }
+
+  .block_form{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+
+    .etiquette{
+        label{
+          font-size: 1.5rem;
+        }
+        input{
+            padding-top: 3%;
+            width: 50%;
+        }
+        #message{
+          width: 100%;
+        }
       }
+  }
+
+  footer{
+    background-color: $orange_rouge_photoshop;
+    padding-top: 2%;
+    padding-bottom: 5%;
   }
