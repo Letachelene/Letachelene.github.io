@@ -3,8 +3,8 @@
 
 body {
   max-width: 100%;
-  font-family: "Roboto-Regular";
-  font-size: 1.3rem;
+  font-family: "Roboto";
+  font-size: 1rem;
 }
 
 
@@ -29,13 +29,18 @@ body {
   display: block;
 }
 
-header{
+header.sticky{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background-color: $rouge_photoshop_background;
+  opacity: 0.7;
   width: 100%;
   display: flex;
   flex-direction: row;
   margin-top: -0.7%;
   margin-bottom: -0.8%;
+  z-index: 1;
 
       ul{
         display: flex;
@@ -47,7 +52,9 @@ header{
       }
 
       .navbar{
-        color: white;}
+        color: white;
+        font-size: 1.1rem;
+        }
 
         .navbar:hover{
           background-color: black;
@@ -133,9 +140,10 @@ h2  {
               width: 180px;
               height: 55px;
               border-radius: 50%;
-              font-size: 1.3em;
+              font-size: 1.2rem;
               margin-top: 55%;
-              padding-top: 5%;
+              padding-top: 6%;
+
           }
         }
     }
@@ -169,6 +177,12 @@ h2  {
 
         .logo_techno{
           width: 100px;
+          height: 100px;
+          padding: 15%;
+        }
+
+        #logo_techno1{
+          width: 150px;
           height: 100px;
           padding: 15%;
         }
@@ -348,7 +362,7 @@ h2  {
           border: 4px solid #FF9F55;
           top: 15px;
           border-radius: 50%;
-          z-index: 1;
+          z-index: 1.5;
         }
 
         /* Je place le container à gauche */
@@ -369,7 +383,7 @@ h2  {
           position: absolute;
           top: 22px;
           width: 0;
-          z-index: 1;
+          z-index: 1.5;
           right: 30px;
           border: medium solid white;
           border-width: 10px 0 10px 10px;
@@ -383,7 +397,7 @@ h2  {
           position: absolute;
           top: 22px;
           width: 0;
-          z-index: 1;
+          z-index: 1.5;
           left: 30px;
           border: medium solid white;
           border-width: 10px 10px 10px 0;
@@ -441,8 +455,8 @@ h2  {
     flex-direction: row;
     display: flex;
         .rubrique_hobbies{
-          background-color: $darkorange_photoshop_background;
-          color: white;
+          background-color: $yellow-background;
+          color: black;
           font-size: 1.2em;
           border-radius: 50%;
           padding: 1%;

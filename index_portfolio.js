@@ -48,7 +48,7 @@ function myFunction6() {
 
 animation_logos("logo_techno");*/
 
-              /*wow = new WOW(
+              wow = new WOW(
                       {
                       boxClass:     'wow',
                       animateClass: 'animated',
@@ -57,7 +57,7 @@ animation_logos("logo_techno");*/
                       live:         true
                     }
                     )
-                    wow.init();*/
+                    wow.init();
 
 window.onload = function(){
 
