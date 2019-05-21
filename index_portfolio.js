@@ -2,35 +2,26 @@ function RedirectionJavascript() {
   document.location.href="CVDEV_copie.pdf";
 }
 
-function myFunction1() {
-  var elmnt = document.getElementById("digital");
-  elmnt.scrollIntoView();
+function navScroll(event)
+{
+  const idScroll = event.target.dataset.scrollto;
+  let elmnt = document.getElementById(idScroll);
+
+  window.scrollTo(elmnt.offsetLeft, elmnt.offsetTop - document.getElementById('menu').parentNode.clientHeight);
 }
 
-function myFunction2() {
-  var elmnt = document.getElementById("projets");
-  elmnt.scrollIntoView();
-}
+/*La fonction Navscroll sert à naviguer sur toute la page :
+Je définis une variable (idScroll) qui est égale à :
+evenement + cible + renvoi à data + variable scrollto qui a été stockée dans le html
+Je charge la variable scrollto avec en paramètre : l'élément déplacé vers la gauche,
+sur l'Id ciblé + bloc parent + taille' */
 
-function myFunction3() {
-  var elmnt = document.getElementById("formations");
-  elmnt.scrollIntoView();
-}
 
-function myFunction4() {
-  var elmnt = document.getElementById("experiences");
-  elmnt.scrollIntoView();
-}
 
-function myFunction5() {
-  var elmnt = document.getElementById("hobbies");
-  elmnt.scrollIntoView();
-}
-
-function myFunction6() {
+/*function myFunction6() {
   var elmnt = document.getElementById("formulaire");
   elmnt.scrollIntoView();
-}
+}*/
 
 /*function animation_logos(element, numero){
 

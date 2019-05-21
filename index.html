@@ -33,12 +33,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <header class="sticky">
       <ul id="menu">
-        <li class="navbar" onclick="myFunction1()">Digital</li>
-        <li class="navbar" onclick="myFunction2()">Projets</li>
-        <li class="navbar" onclick="myFunction3()">Formations</li>
-        <li class="navbar" onclick="myFunction4()">Expériences</li>
-        <li class="navbar" onclick="myFunction5()">Hobbies</li>
-        <li class="navbar" onclick="myFunction6()">Formulaire</li>
+        <li class="navbar" data-scrollTo="digital" onclick="navScroll(event)">Digital</li>
+        <li class="navbar" data-scrollTo="projets" onclick="navScroll(event)">Projets</li>
+        <li class="navbar" data-scrollTo="formations" onclick="navScroll(event)">Formations</li>
+        <li class="navbar" data-scrollTo="experiences" onclick="navScroll(event)">Expériences</li>
+        <li class="navbar" data-scrollTo="hobbies" onclick="navScroll(event)">Hobbies</li>
+        <!--Je stocke mon scroll dans une variable avec data (nom de la variable = scrollTo)
+            + onclick + nom de la fonction navScroll dans JS avec en paramètre l'EVENT-->
       </ul>
 
       <ul id="logo_row">
@@ -76,20 +77,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <p><img class="circle responsive-img" src="./images/image_accueil.jpg"></p>
 
         <div id="about">
-          <h1>Hélène Le Tac</h1>
+          <h1 class="wow pulse">Qui suis-je ?</h1>
+          <h3>Hélène Le Tac</h3>
           <h2>Développeuse Front-End</h2>
-          <p>Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche
-          Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche Paragraphe d'accroche
-          Conception à part entière d'un projet web : CMS, langages script, SEO...</p>
+          <p>Marier le texte et l'image a toujours été ma passion : après avoir parcouru le monde
+            avec un carnet de note et un appareil de photo, je rêvais de rendre mes contenus interactifs…
+            Formée aujourd'hui aux CMS et aux langages script,
+            mon désir est de participer à des interfaces innovantes pour des applications
+            et des sites : chercher des codes courts et astucieux, des fronts originaux
+            et des contenus captivants.</p>
           <div id="pied_accueil">
               <p><img src="./images/LOGO_CODING_ACADEMY_PNG.png"></p>
-              <div id="logo_bouton" class="wow bounceInDown heartBeat">
+
+            <div id="block_boutons">
+              <div class="logo_bouton" id="marge_bouton" class="wow bounceInDown heartBeat">
               <a onclick="RedirectionJavascript()"
-              class="btn waves-effect waves-light black">
+                class="btn waves-effect waves-light black">
                 Mon CV</a>
-                <!--<iframe src="CVEPI_DEV_2019.pdf"></iframe>-->
               </div>
-          </div>
+
+              <div class="logo_bouton" id="marge_bouton1" class="wow bounceInDown heartBeat">
+                <a data-scrollTo="formulaire" onclick="navScroll(event)"
+                class="btn waves-effect waves-light black">
+                Contact</a>
+                <!--<a onclick="myFunction6()"
+                class="btn waves-effect waves-light black">
+                Contact</a>-->
+              </div>
+            </div>
+
       </div>
 
     </section>
