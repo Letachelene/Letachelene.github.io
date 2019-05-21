@@ -7,7 +7,7 @@
   <meta name="description" content=" Mon parcours, mes expériences et mes travaux" />
   <meta name="copyright" content="© Laurent Poleo-Garnier" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="css/animate.css">
 <script>var dataLayer = [{}];</script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           Conception à part entière d'un projet web : CMS, langages script, SEO...</p>
           <div id="pied_accueil">
               <p><img src="./images/LOGO_CODING_ACADEMY_PNG.png"></p>
-              <div id="logo_bouton">
+              <div id="logo_bouton" class="wow bounceInDown heartBeat">
               <a onclick="RedirectionJavascript()"
               class="btn waves-effect waves-light black">
                 Mon CV</a>
@@ -98,33 +98,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div id="digital" class="block_techno">
         <h3>Digital</h3>
         <div class="sous-block-techno">
-        <p><img class="logo_techno wow bounceInUp" src="./images/logo_HTML5.png"></p>
-        <p><img class="logo_techno" src="./images/logo_CSS3.jpg"></p>
-        <p><img class="logo_techno" src="./images/logo_javascript.png"></p>
-        <p><img class="logo_techno" src="./images/logo_angular.png"></p>
-        <p><img class="logo_techno" src="./images/logo_react.png"></p>
-        <p><img id="logo_techno1" src="./images/php-logo.png"></p>
+        <p><img class="logo_techno wow bounceInRight" data-wow-duration="0.8s" data-wow-delay="0.6s"
+          src="./images/logo_HTML5.png"></p>
+        <p><img class="logo_techno wow bounceInRight" data-wow-duration="0.8s" data-wow-delay="0.7s"
+          src="./images/logo_CSS3.jpg"></p>
+        <p><img class="logo_techno wow bounceInRight" data-wow-duration="0.8s" data-wow-delay="0.8s"
+          src="./images/logo_javascript.png"></p>
+        <p><img class="logo_techno wow bounceInRight" data-wow-duration="0.8s" data-wow-delay="0.9s"
+          src="./images/logo_angular.png"></p>
+        <p><img class="logo_techno wow bounceInRight" data-wow-duration="0.8s" data-wow-delay="1s"
+          src="./images/logo_react.png"></p>
+        <p><img id="logo_techno1" class="wow bounceInRight" data-wow-duration="0.8s" data-wow-delay="1.1s"
+          src="./images/php-logo.png"></p>
         </div>
       </div>
       <div id="projets" class="block_projects">
         <h3>Quelques projets...</h3>
           <div class="line_projects1">
             <a href="./projets_example/Accessibility_Semantics/MAQUETTE_FORET.html">
-            <div class="block_projet">
+            <div class="block_projet wow bounceInLeft">
                 <button id="maquette_foret"></button>
                 <div class="description_projet"><p>Description du projet</p></div>
             </div>
             </a>
 
             <a href="./projets_example/Animation/animation_index.htm">
-            <div class="block_projet">
+            <div class="block_projet wow bounceInUp">
               <button id="maquette_animation"></button>
               <div class="description_projet"><p>Description du projet</p></div>
             </div>
             </a>
 
             <a href="./projets_example/c1web104p6/materialize_batman.html">
-            <div class="block_projet">
+            <div class="block_projet wow bounceInRight">
                 <button id="maquette_materialize"></button>
                 <div class="description_projet"><p>Description du projet</p></div>
             </div>
@@ -133,20 +139,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="line_projects2">
             <a href="./projets_example/c1web104p9/gsap.html">
-            <div class="block_projet">
+            <div class="block_projet wow bounceInLeft">
                 <button id="maquette_gsap"></button>
                 <div class="description_projet"><p>Description du projet</p></div>
             </div>
             </a>
 
             <a href="./projets_example/my_snapchat/my_snapchat_Inscription.html">
-            <div class="block_projet">
+            <div class="block_projet wow bounceInDown">
                 <button id="maquette_snapchat"></button>
                 <div class="description_projet"><p>Description du projet</p></div>
             </div>
             </a>
 
-            <div class="block_projet">
+            <div class="block_projet wow bounceInRight">
                 <button id="maquette_spotify"></button>
                 <div class="description_projet"><p>Description du projet</p></div>
             </div>
@@ -156,7 +162,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <section id="formations" class="block_formations">
         <h3>Formations</h3>
-            <div class="timeline">
+            <div class="timeline wow bounceInUp">
                 <div class="ligne_container">
                   <div class="container left">
                     <article class="content">
@@ -192,7 +198,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <section id="experiences" class="block_experiences">
             <h3>Expériences</h3>
-              <div class="timeline">
+              <div class="timeline wow bounceInUp">
                 <div class="ligne_container">
                   <div class="container left">
                     <article class="content">
@@ -308,13 +314,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" type = "text/css" href="./stylesheets/style.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
       <script src="index_portfolio.js"></script>
 
+            <!--<script href="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>-->
+            <script type="text/javascript" src="js/wow.min.js">
 
-      <link rel="stylesheet" href="css/animate.css">
-
-            <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
-            <script>new WOW().init();</script>
-
-
+            </script>
+            <script>
+                new WOW().init();
+            </script>
 </html>

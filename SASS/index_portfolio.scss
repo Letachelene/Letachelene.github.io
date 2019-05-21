@@ -34,12 +34,10 @@ header.sticky{
   position: sticky;
   top: 0;
   background-color: $rouge_photoshop_background;
-  opacity: 0.7;
+  //opacity: 0.7;
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-top: -0.7%;
-  margin-bottom: -0.8%;
   z-index: 1;
 
       ul{
@@ -83,7 +81,7 @@ h1  {
   }
 
 h2  {
-    font-size: 3em !important;
+    font-size: 2em !important;
   }
 
 
@@ -109,14 +107,14 @@ h2  {
 #accueil{
   background-color: $yellow-background;
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 4%;
+  padding-bottom: 5%;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
   flex-direction: row;
     img{
-      width: 67%;
+      width: 70%;
     }
     #about{
       width: 60%;
@@ -174,18 +172,19 @@ h2  {
               color: white;
               width: 50%;
               padding-left: 10%;
+              font-size: 2rem;
             }
         }
 
         .logo_techno{
-          width: 100px;
-          height: 100px;
+          width: 85px;
+          height: 85px;
           padding: 15%;
         }
 
         #logo_techno1{
-          width: 150px;
-          height: 100px;
+          width: 85px;
+          height: 65px;
           padding: 15%;
         }
 
@@ -202,6 +201,8 @@ h2  {
          h3{
            padding-left: 10%;
            margin-bottom: 8%;
+           font-size: 2rem;
+           padding-top: -3%;
          }
 
         .line_projects1{
@@ -292,6 +293,10 @@ h2  {
         h3{
           width: 100%;
           padding-left: 10%;
+          padding-top: 2%;
+          padding-bottom: 2%;
+          color: white;
+          font-size: 2rem;
         }
 
         img{
@@ -309,6 +314,10 @@ h2  {
           h3{
             width: 100%;
             padding-left: 10%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            color: white;
+            font-size: 2rem;
           }
 
           img{
@@ -359,7 +368,7 @@ h2  {
           position: absolute;
           width: 25px;
           height: 25px;
-          right: -17px;
+          right: -13px;
           background-color: white;
           border: 4px solid #FF9F55;
           top: 15px;
@@ -390,6 +399,7 @@ h2  {
           border: medium solid white;
           border-width: 10px 0 10px 10px;
           border-color: transparent transparent transparent white;
+
         }
 
         /* J'ajoute une flèche au container droite (pointant à gauche) */
@@ -408,7 +418,7 @@ h2  {
 
         /* Je fixe un cercle sur le côté droite des containers */
         .right::after {
-          left: -16px;
+          left: -13px;
           //border-color: black;
         }
 
@@ -423,6 +433,7 @@ h2  {
           background-color: white;
           position: relative;
           border-radius: 6px;
+          border: 2px solid #FF9F55;
         }
 
         .ligne_container{
