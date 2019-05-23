@@ -240,15 +240,13 @@ h3{
 
         button{
           @include bouton_capture;
-          //background-image: url("./captures_projets/foret_cercle.png");
+        
         }
         button{
           @include bouton_capture;
         }
 
-        /*.position_capture{
-          background-position: -32px -28px;
-        }*/
+
 
         #maquette_foret{
           background-image: url("../captures_projets/foret_cercle.png");

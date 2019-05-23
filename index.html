@@ -322,7 +322,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div id="formulaire">
       <div class="row block_form col s12">
-         <form method="POST" onsubmit="sendForm();" action="https://formspree.io/contact.heleneletac@gmail.com">
+         <form method="POST" onsubmit="myFormSent();" action="https://formspree.io/contact.heleneletac@gmail.com">
            <div>
              <div class="input-field col s6 etiquette">
                <input id="first_name" type="text" name="name">
@@ -347,19 +347,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                   <input id="bouton_formulaire" type="submit" value="Envoyez">
               </div>
               <script>
-                dataLayer.push({
-                  'event': 'santianoEvent',
-                  'eventCategory': 'Utilisateur',
-                  'eventAction': 'Formulaire de contact',
-                  'eventLabel': 'Message envoyé',
-                  'eventValue': '1'
-                });
-                function sendForm(){
-                  alert('submit');
-                }
+              function myFormSent(){
+                  dataLayer.push({
+                      ‘event’: ‘santianoEvent’,
+                      ‘eventCategory’: ‘Utlisateur’,
+                      ‘eventAction’ : ‘Formulaire de contact’,
+                      ‘eventLabel’: ‘Message envoyé’,
+                      ‘eventValue’: ‘1’
+                  });
+                };
               </script>
         </form>
-
     </div>
 
   </div>
