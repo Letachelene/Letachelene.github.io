@@ -62,6 +62,11 @@ h3 {
   font-size: 1.8em !important;
 }
 
+article {
+  font-size: 1.3em !important;
+  margin-bottom: -10%;
+}
+
 #street {
   display: none;
   position: absolute;
@@ -97,8 +102,8 @@ h3 {
   width: 60%;
 }
 #accueil #about img {
-  width: 60%;
-  margin-top: 15%;
+  width: 50%;
+  margin-top: 20%;
 }
 #accueil #about #pied_accueil {
   width: 100%;
@@ -169,9 +174,6 @@ h3 {
   padding-top: 5%;
   padding-bottom: 10%;
   color: white;
-  /*.position_capture{
-    background-position: -32px -28px;
-  }*/
 }
 .block_projects h3 {
   padding-left: 10%;
@@ -236,20 +238,24 @@ h3 {
   width: 390px;
   height: 390px;
   border-radius: 50%;
-  overflow: hidden;
   position: absolute;
   top: 1.5%;
   right: -1.8%;
+  padding: 10%;
+}
+.block_projects .description_projet h4 {
+  font-size: 2rem;
+  padding: 5%;
 }
 .block_projects .description_projet p {
   color: white;
-  text-align: center;
-  padding-top: 10%;
+  text-align: justify;
+  padding-top: 5%;
 }
 .block_projects .description_projet:hover {
   opacity: 0.6;
 }
-.block_projects .block_projet {
+.block_projects .sous_block_projet {
   position: relative;
 }
 
@@ -272,9 +278,13 @@ h3 {
 .block_formations img {
   width: 150px;
   height: 100px;
+  margin-left: 0%;
 }
 .block_formations h4 {
   font-size: 1.5rem;
+}
+.block_formations #paris_sud {
+  margin-left: 20%;
 }
 
 .block_experiences {
@@ -295,6 +305,9 @@ h3 {
 }
 .block_experiences #hachette {
   margin-left: -5%;
+}
+.block_experiences #gallimard {
+  border-width: 30px;
 }
 .block_experiences h4 {
   font-size: 1.5rem;
@@ -425,20 +438,75 @@ h3 {
 .block_hobbies {
   background-color: #ff3915;
   margin-top: -1.1%;
-  padding: 3%;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  /*.carrousel{
+      position:relative;
+      width: 85%;
+      height: 70%;
+      margin: auto;
+
+  }
+  .carrousel ul li{
+      position:absolute;
+      top:0;
+      left: 50%;
+      //width: calc(100% * 5);
+      //animation: "glisse" 10s infinite;
+  }*/
+}
+.block_hobbies .block_carrousel {
+  width: 100%;
   flex-direction: row;
   display: flex;
 }
-.block_hobbies .rubrique_hobbies {
-  background-color: #ffd600;
-  color: black;
-  font-size: 1.2em;
-  border-radius: 50%;
-  padding: 1%;
-  width: 25%;
-  text-align: center;
+.block_hobbies h3 {
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 2rem;
+}
+.block_hobbies .sous_block_carrousel {
+  width: 50%;
+  margin-top: -2%;
+  margin-bottom: -3%;
+  padding-left: 22%;
+}
+.block_hobbies .liste_puces {
+  list-style-type: circle;
+}
+.block_hobbies img {
+  width: 250px;
+}
+.block_hobbies .sous_block_rubriques {
+  width: 50%;
+  margin-top: -2%;
+  margin-bottom: -3%;
+  padding-left: 3%;
+}
+.block_hobbies .rubriques_carrousel {
+  font-size: 1.2rem;
 }
 
+/*.block_hobbies{
+  background-color: $rouge_photoshop_background;
+  margin-top: -1.1%;
+  padding: 3%;
+  flex-direction: row;
+  display: flex;
+      .rubrique_hobbies{
+        background-color: $yellow-background;
+        color: black;
+        font-size: 1.2em;
+        border-radius: 50%;
+        padding: 1%;
+        width: 25%;
+        text-align: center;
+      }
+}*/
 .block_form {
   margin-top: 2%;
   margin-left: 30%;

@@ -24,6 +24,15 @@ body {
   padding-bottom: 3%;
 }
 
+@mixin titre_rubriques {
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  color: white;
+  font-size: 2rem;
+}
+
 .corpus{
   max-width: 100%;
   display: block;
@@ -90,6 +99,10 @@ h2  {
 h3{
     font-size: 1.8em !important;
   }
+article{
+  font-size: 1.3em !important;
+  margin-bottom: -10%;
+}
 
 
 
@@ -129,8 +142,8 @@ h3{
     #about{
       width: 60%;
         img{
-          width: 60%;
-          margin-top: 15%;
+          width: 50%;
+          margin-top: 20%;
             }
 
             #pied_accueil{
@@ -240,7 +253,7 @@ h3{
 
         button{
           @include bouton_capture;
-        
+
         }
         button{
           @include bouton_capture;
@@ -281,14 +294,14 @@ h3{
           width: 390px;
           height: 390px;
           border-radius: 50%;
-          overflow: hidden;
           position: absolute;
           top: 1.5%;
           right: -1.8%;
+          padding: 10%;
 
             h4{
               font-size: 2rem;
-              text-align: center;
+              padding: 5%;
             }
 
             p {
@@ -297,15 +310,17 @@ h3{
               padding-top: 5%;
             }
 
+
           }
 
           .description_projet:hover{
             opacity: 0.6;
           }
 
-        .block_projet{
-          position: relative;
-        }
+          .sous_block_projet{
+            position: relative;
+          }
+
 
   }
 
@@ -316,20 +331,20 @@ h3{
     @include blocks_timeline ($light_orange_photoshop_background);
 
         h3{
-          width: 100%;
-          padding-left: 10%;
-          padding-top: 2%;
-          padding-bottom: 2%;
-          color: white;
-          font-size: 2rem;
+          @include titre_rubriques;
         }
 
         img{
           width: 150px;
           height: 100px;
+          margin-left: 0%;
         }
         h4{
           font-size: 1.5rem;
+        }
+
+        #paris_sud{
+          margin-left: 20%;
         }
     }
 
@@ -337,13 +352,9 @@ h3{
       @include blocks_timeline ($orange2_photoshop);
 
           h3{
-            width: 100%;
-            padding-left: 10%;
-            padding-top: 2%;
-            padding-bottom: 2%;
-            color: white;
-            font-size: 2rem;
+            @include titre_rubriques;
           }
+
 
           img{
             width: 200px;
@@ -352,6 +363,11 @@ h3{
           #hachette{
             margin-left: -5%;
           }
+
+          #gallimard{
+            border-width: 30px;
+          }
+
 
           h4{
             font-size: 1.5rem;
@@ -489,6 +505,63 @@ h3{
   .block_hobbies{
     background-color: $rouge_photoshop_background;
     margin-top: -1.1%;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+
+        .block_carrousel{
+          width: 100%;
+          flex-direction: row;
+          display: flex;
+        }
+
+          h3{
+            @include titre_rubriques;
+          }
+
+          .sous_block_carrousel{
+            width:50%;
+            margin-top: -2%;
+            margin-bottom: -3%;
+            padding-left: 22%;
+          }
+
+          /*.carrousel{
+              position:relative;
+              width: 85%;
+              height: 70%;
+              margin: auto;
+
+          }
+          .carrousel ul li{
+              position:absolute;
+              top:0;
+              left: 50%;
+              //width: calc(100% * 5);
+              //animation: "glisse" 10s infinite;
+          }*/
+
+          .liste_puces{
+            list-style-type: circle;
+          }
+
+          img{
+            width: 250px;
+          }
+
+          .sous_block_rubriques{
+                width:50%;
+                margin-top: -2%;
+                margin-bottom: -3%;
+                padding-left: 3%;
+          }
+          .rubriques_carrousel{
+                font-size: 1.2rem;
+          }
+    }
+  /*.block_hobbies{
+    background-color: $rouge_photoshop_background;
+    margin-top: -1.1%;
     padding: 3%;
     flex-direction: row;
     display: flex;
@@ -501,7 +574,7 @@ h3{
           width: 25%;
           text-align: center;
         }
-  }
+  }*/
 
   .block_form{
     margin-top: 2%;

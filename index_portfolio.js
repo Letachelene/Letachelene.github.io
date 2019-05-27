@@ -10,6 +10,11 @@ function navScroll(event)
   window.scrollTo(elmnt.offsetLeft, elmnt.offsetTop - document.getElementById('menu').parentNode.clientHeight);
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+   var elems = document.querySelectorAll('.carousel');
+   var instances = M.Carousel.init(elems, options);
+ });
+
 /*La fonction Navscroll sert à naviguer sur toute la page :
 Je définis une variable (idScroll) qui est égale à :
 evenement + cible + renvoi à data + variable scrollto qui a été stockée dans le html
