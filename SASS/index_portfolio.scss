@@ -498,7 +498,6 @@ article{
   .carrousel{
     width: 100%;
     background-color: white;
-    margin-top: 5%;
     margin-bottom: 10%;
   }
 
@@ -521,9 +520,9 @@ article{
 
           .sous_block_carrousel{
             width:50%;
-            margin-top: -2%;
+            margin-top: -10%;
             margin-bottom: -3%;
-            padding-left: 22%;
+            //padding-left: 22%;
           }
 
           /*.carrousel{
@@ -546,7 +545,13 @@ article{
           }
 
           img{
-            width: 250px;
+            width: 100%;
+            max-width: 100%;
+            max-height: 100%;
+          }
+          .myclass{
+            width: 50%;
+            height: 200px;
           }
 
           .sous_block_rubriques{

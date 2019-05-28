@@ -12,7 +12,7 @@ function navScroll(event)
 
 document.addEventListener('DOMContentLoaded', function() {
    var elems = document.querySelectorAll('.carousel');
-   var instances = M.Carousel.init(elems, options);
+   var instances = M.Carousel.init(elems);
  });
 
 /*La fonction Navscroll sert à naviguer sur toute la page :
