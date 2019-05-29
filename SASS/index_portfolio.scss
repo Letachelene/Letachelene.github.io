@@ -184,16 +184,8 @@ article{
           }
 
 
-  .block_computing{
+  /*.block_computing{
     width: 100%;
-
-      .block_techno{
-        background-color: black;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        padding-top: 1%;
-        padding-bottom: 1%;
 
             .sous-block-techno{
               width: 50%;
@@ -208,19 +200,28 @@ article{
               padding-left: 10%;
               font-size: 2rem;
             }
-        }
+        }*/
 
-        .logo_techno{
-          width: 85px;
-          height: 85px;
-          padding: 15%;
-        }
 
-        #logo_techno1{
-          width: 110px;
-          height: 90px;
-          padding: 15%;
-        }
+        .block_techno{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          margin-left: 13%;
+
+              .logo_techno{
+                width: 75px;
+                height: 65px;
+                margin-left: 15px;
+                margin-right: 15px;
+              }
+
+                #logo_techno1{
+                  width: 90px;
+                  height: 70px;
+                  margin-left: 15px;
+                  margin-right: 15px;
+                }
 
 
       }
@@ -317,21 +318,18 @@ article{
             opacity: 0.6;
           }
 
-          .sous_block_projet{
+          /*.sous_block_projet{
             position: relative;
             margin-left: 15px;
             margin-right: 15px;
-          }
+          }*/
 
 
   }
 
   .block_formations{
-    /*background-color: $light_orange_photoshop_background;
-    padding-top: 0.1%;
-    padding-bottom: 3%;*/
-    @include blocks_timeline ($light_orange_photoshop_background);
 
+    @include blocks_timeline ($light_orange_photoshop_background);
         h3{
           @include titre_rubriques;
         }
@@ -354,7 +352,8 @@ article{
       @include blocks_timeline ($orange2_photoshop);
 
           h3{
-            @include titre_rubriques;
+            //@include titre_rubriques;
+            display: none;
           }
 
 
@@ -390,6 +389,7 @@ article{
           content: '';
           position: absolute;
           width: 2.5px;
+          //height: 105%;
           background-color: white;
           top: 0;
           bottom: 0;
