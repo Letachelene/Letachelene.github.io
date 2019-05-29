@@ -134,38 +134,40 @@ article {
   margin-top: -30%;
 }
 
-.block_computing {
+/*.block_computing{
   width: 100%;
-}
-.block_computing .block_techno {
-  background-color: black;
+
+          .sous-block-techno{
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            margin-right: 5%;
+          }
+
+          h3{
+            color: white;
+            width: 50%;
+            padding-left: 10%;
+            font-size: 2rem;
+          }
+      }*/
+.block_techno {
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  margin-left: 13%;
 }
-.block_computing .block_techno .sous-block-techno {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  margin-right: 5%;
+.block_techno .logo_techno {
+  width: 75px;
+  height: 65px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
-.block_computing .block_techno h3 {
-  color: white;
-  width: 50%;
-  padding-left: 10%;
-  font-size: 2rem;
-}
-.block_computing .logo_techno {
-  width: 85px;
-  height: 85px;
-  padding: 15%;
-}
-.block_computing #logo_techno1 {
-  width: 110px;
-  height: 90px;
-  padding: 15%;
+.block_techno #logo_techno1 {
+  width: 90px;
+  height: 70px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .block_projects {
@@ -173,6 +175,11 @@ article {
   padding-top: 5%;
   padding-bottom: 10%;
   color: white;
+  /*.sous_block_projet{
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+  }*/
 }
 .block_projects h3 {
   padding-left: 10%;
@@ -254,16 +261,8 @@ article {
 .block_projects .description_projet:hover {
   opacity: 0.6;
 }
-.block_projects .sous_block_projet {
-  position: relative;
-  margin-left: 15px;
-  margin-right: 15px;
-}
 
 .block_formations {
-  /*background-color: $light_orange_photoshop_background;
-  padding-top: 0.1%;
-  padding-bottom: 3%;*/
   background-color: #fd7d22;
   padding-top: 0.1%;
   padding-bottom: 3%;
@@ -294,12 +293,7 @@ article {
   padding-bottom: 3%;
 }
 .block_experiences h3 {
-  width: 100%;
-  padding-left: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  color: white;
-  font-size: 2rem;
+  display: none;
 }
 .block_experiences img {
   width: 200px;
