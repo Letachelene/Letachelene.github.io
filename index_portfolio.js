@@ -1,5 +1,5 @@
 function RedirectionJavascript() {
-  document.location.href="CVDEV_copie.pdf";
+  document.location.href="CVEPI_2019.pdf";
 }
 
 function navScroll(event)
