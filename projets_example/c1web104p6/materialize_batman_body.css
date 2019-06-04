@@ -1,0 +1,23 @@
+body {
+  max-width: 100%;
+  font-family: "Courier Prime Regular";
+  font-size: 1em;
+}
+
+.container{
+  max-width: 997px;
+}
+/* À mettre dans chaque fichier CSS : une div générale sous le body
+avec une classe container: mettre en général la taille standard de 1014px,
+puis des %tage en taille dans le reste du body*/
+
+#background_image{
+  width: 100%;
+  margin-top: -1.5%;
+}
+footer{
+  font-family: "Courier Prime Italic";
+  margin: auto;
+  text-align: center;
+  font-size: 1.3em;
+}
