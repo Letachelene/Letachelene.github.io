@@ -363,27 +363,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <div id="formulaire">
       <div class="row block_form col s12">
-         <form method="POST" onsubmit="sendForm();" action="https://formspree.io/contact.heleneletac@gmail.com">
+         <form method="POST" onsubmit="sendForm();"
+         action="https://formspree.io/contact.heleneletac@gmail.com">
            <div>
-             <div class="input-field col s6 etiquette">
+             <div class="input-field col s12 etiquette"
+                style="width: 135%; height : 40px; margin-left: 8%">
                <input id="first_name" type="text" name="name">
                <label for="first_name">Nom</label>
              </div>
-             <div class="input-field col s6 etiquette">
+             <div class="input-field col s12 etiquette"
+                style="width: 135%; height : 40px; margin-left: 8%">
                <input id="last_name" type="text" name="name">
                <label for="last_name">Prénom</label>
              </div>
-             <div class="input-field col s12 etiquette">
+             <div class="input-field col s12 etiquette"
+                style="width: 135%; height : 40px; margin-left: 8%">
                 <input id="email" type="email" name="_replyto">
                 <label for="email">Email</label>
               </div>
-              <div class="input-field col s12 etiquette">
+              <div class="input-field col s12 etiquette"
+                style="width: 135%; height : 40px; margin-left: 8%">
                   <input type="text" name="subject" value="Sujet">
                   <label for="input_text">Sujet de votre message</label>
               </div>
               <div class="input-field col s12 etiquette" id="message">
+                <i class="material-icons prefix">mode_edit</i>
                 <textarea id="icon_prefix2" class="materialize-textarea"
-                data-length="10" style="width: 500px"></textarea>
+                data-length="10" style="width: 500px; height : 60px;"></textarea>
                 <label for="icon_prefix2">Message</label>
               </div>
                   <input id="bouton_formulaire" type="submit" value="Envoyez">
