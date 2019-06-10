@@ -64,6 +64,8 @@ h3 {
 article {
   font-size: 1.3em !important;
   margin-bottom: -10%;
+  text-align: justify;
+  font-style: italic;
 }
 
 #street {
@@ -99,6 +101,7 @@ article {
 }
 #accueil #about {
   width: 60%;
+  margin-top: -2%;
 }
 #accueil #about img {
   width: 50%;
@@ -155,7 +158,7 @@ article {
   width: 100%;
   display: flex;
   flex-direction: row;
-  margin-left: 13%;
+  margin-left: 6%;
 }
 .block_techno .logo_techno {
   width: 75px;
