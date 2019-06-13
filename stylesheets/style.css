@@ -253,7 +253,9 @@ article {
 }
 .block_projects .description_projet h4 {
   font-size: 2rem;
-  padding: 5%;
+  padding-top: 10%;
+  margin-bottom: -1%;
+  text-align: center;
 }
 .block_projects .description_projet p {
   color: white;
