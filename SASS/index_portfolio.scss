@@ -84,25 +84,60 @@ header.sticky{
 
     }
 
-h1  {
-    font-size: 2.3em !important;
-    color: white;
-    //text-shadow:  0.1px 0.7px 1px white, 0 0 30px #ff3915, 0 0 10px #ff3915;
-    /*font-family: "lemoneign";*/
-  }
+    h1  {
+        font-size: 2.3em !important;
+        color: white;
+      }
 
-h2  {
-    font-size: 2em !important;
-    font-weight: bold;
-  }
+      .animated {
+                  animation-duration: 3.5s;
 
-h3{
-    font-size: 1.8em !important;
-  }
+               }
+
+               @-webkit-keyframes fadeOut {
+                  0% {opacity: 1;}
+                  100% {opacity: 0;}
+               }
+
+               @keyframes fadeOut {
+                  0% {opacity: 1;}
+                  100% {opacity: 0;}
+               }
+
+               .fadeOut {
+                  animation-name: fadeOut;
+               }
+
+        h2  {
+            font-size: 2em !important;
+            font-weight: bold;
+          }
+
+        h3{
+            font-size: 1.8em !important;
+          }
+          .animated1 {
+                      animation-duration: 3.8s;
+                   }
+
+                   @-webkit-keyframes fadeIn {
+                      100% {opacity: 0;}
+                      0% {opacity: 1;}
+                   }
+
+                   @keyframes fadeIn {
+                      0% {opacity: 0;}
+                      100% {opacity: 1;}
+                   }
+
+          .fadeIn {
+             animation-name: fadeIn;
+          }
+
+
 article{
   font-size: 1.3em !important;
   margin-bottom: -10%;
-  text-align: justify;
 }
 
 
@@ -144,7 +179,7 @@ article{
       width: 60%;
       margin-top: -2%;
         img{
-          width: 50%;
+          width: 35%;
           margin-top: 20%;
             }
 

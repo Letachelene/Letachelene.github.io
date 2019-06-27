@@ -49,7 +49,30 @@ header.sticky #logo_row {
 h1 {
   font-size: 2.3em !important;
   color: white;
-  /*font-family: "lemoneign";*/
+}
+
+.animated {
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.fadeOut {
+  animation-name: fadeOut;
 }
 
 h2 {
@@ -61,10 +84,33 @@ h3 {
   font-size: 1.8em !important;
 }
 
+.animated1 {
+  animation-duration: 3.8s;
+}
+
+@-webkit-keyframes fadeIn {
+  100% {
+    opacity: 0;
+  }
+  0% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeIn {
+  animation-name: fadeIn;
+}
+
 article {
   font-size: 1.3em !important;
   margin-bottom: -10%;
-  text-align: justify;
 }
 
 #street {
@@ -103,7 +149,7 @@ article {
   margin-top: -2%;
 }
 #accueil #about img {
-  width: 50%;
+  width: 35%;
   margin-top: 20%;
 }
 #accueil #about #pied_accueil {
