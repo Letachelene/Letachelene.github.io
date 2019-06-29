@@ -7,6 +7,10 @@ body {
   font-size: 1rem;
 }
 
+/*a:link{
+cursor: pointer;
+}*/
+
 
 @mixin bouton_capture{
   width: 390px;
@@ -341,7 +345,7 @@ article{
           border-radius: 50%;
           position: absolute;
           top: 1.5%;
-          right: -1.8%;
+          //right: -1.8%;
           padding: 10%;
 
             h4{
