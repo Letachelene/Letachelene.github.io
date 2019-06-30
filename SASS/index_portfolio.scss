@@ -78,6 +78,20 @@ header.sticky{
         margin-top: 1%;
         border-radius: 5px;
       }
+      #linkedin:hover{
+        opacity: 0.5;
+      }
+
+      #github{
+        font-size:40px;
+        color:black;
+        background: white;
+        border-radius: 100px;
+      }
+
+      #github:hover{
+        opacity: 0.5;
+      }
 
       #menu{
         //padding-left: 8%;
@@ -102,6 +116,9 @@ header.sticky{
 
       .animated {
                   animation-duration: 8s;
+                  -webkit-animation-delay: 0.2s ease-in-out;
+                  -moz-animation-delay: 0.2s ease-in-out;
+                  transition-delay: 0.2s ease-in-out;
 
                }
 
@@ -124,9 +141,38 @@ header.sticky{
             font-weight: bold;
           }
 
+        #nom{
+            font-size: 1.8em !important;
+            margin-top: -10%;
+          }
+
+          .animated2 {
+                      -webkit-animation-delay: 5s ease-in-out;
+                      -moz-animation-delay: 5s ease-in-out;
+                      transition-delay: 5s ease-in-out;
+                      animation-duration: 3s;
+                   }
+
+                   @-webkit-keyframes fadeIn {
+                      100% {opacity: 0;}
+                      0% {opacity: 1;}
+                   }
+
+                   @keyframes fadeIn {
+                      0% {opacity: 0;}
+                      100% {opacity: 1;}
+                   }
+
+          .fadeIn{
+             animation-name: fadeIn;
+          }
+
+
+
         h3{
             font-size: 1.8em !important;
           }
+
           .animated1 {
                       animation-duration: 8s;
                    }
@@ -149,6 +195,7 @@ header.sticky{
 article{
   font-size: 1.3em !important;
   margin-bottom: -10%;
+
 }
 
 
@@ -177,7 +224,7 @@ article{
   background-color: $color_back;
   width: 100%;
   padding-top: 2%;
-  padding-bottom: 4%;
+  padding-bottom: 2%;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
@@ -209,20 +256,28 @@ article{
               display: flex;
               flex-direction: row;
               margin-right: 20%;
+
+
                 a{
                   color: white;
-                  width: 180px;
-                  height: 55px;
-                  border-radius: 50%;
-                  font-size: 1.2rem;
+                  width: 130px;
+                  height: 45px;
+                  border-radius: 180px;
+                  font-size: 1rem;
                   margin-top: 55%;
                   padding-top: 6%;
+                  background-color: $rouge_photoshop_background;
+                  }
+
+                  a:hover{
+                    opacity: 0.5;
+                  }
 
               }
-              }
+
 
                   #marge_bouton{
-                    margin-top: 15%;
+                    margin-top: 45%;
                   }
 
                   #marge_bouton1{
@@ -357,7 +412,6 @@ article{
 
             p {
               color: white;
-              text-align: justify;
               padding-top: 5%;
             }
 

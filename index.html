@@ -42,7 +42,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <li class="navbar" data-scrollTo="experiences" onclick="navScroll(event)"
         style="cursor: pointer;">Expériences</li>
         <li class="navbar" data-scrollTo="hobbies" onclick="navScroll(event)"
-        onmouseover="" style="cursor: pointer;">Hobbies</li>
+        style="cursor: pointer;">Hobbies</li>
         <!--Je stocke mon scroll dans une variable avec data (nom de la variable = scrollTo)
             + onclick + nom de la fonction navScroll dans JS avec en paramètre l'EVENT-->
       </ul>
@@ -82,8 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           crossorigin="anonymous">
           </div>
             <a href="https://github.com/Letachelene/Letachelene.github.io">
-            <i class="fab fa-github" style="font-size:40px; color:black;
-            background: white; border-radius: 100px"></i></a>
+            <i id="github" class="fab fa-github"></i></a>
         </li>
 
       </ul>
@@ -94,9 +93,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <div id="about">
           <h1 class="animated fadeOut">Qui suis-je ?</h1>
-          <h3 class="animated1 fadeIn">Hélène Le Tac</h3>
-          <h2>Développeuse Front-End</h2>
-          <article>Marier le texte et l'image a toujours été ma passion : après avoir parcouru le monde
+          <h3 class="animated1 fadeIn" id="nom">Hélène Le Tac</h3>
+          <h2 class="animated2 fadeIn">Développeuse Front-End</h2>
+          <article class="animated2 fadeIn">Marier le texte et l'image a toujours été ma passion : après avoir parcouru le monde
             avec un carnet de notes et un appareil photo, je rêvais de rendre mes contenus interactifs…
             Je suis formée aujourd'hui aux CMS et aux langages script, et
             mon souhait est de participer à des sites riches en contenus et à des applications
@@ -105,15 +104,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               <p><img src="./images/LOGO_CODING_ACADEMY_PNG.png"></p>
 
             <div id="block_boutons">
-              <div class="logo_bouton" id="marge_bouton" class="wow bounceInDown heartBeat">
+              <div class="logo_bouton" id="marge_bouton">
               <a onclick="RedirectionJavascript()"
-                class="btn waves-effect waves-light black">
+                class="btn waves-effect waves-light">
                 Mon CV</a>
               </div>
 
-              <div class="logo_bouton" id="marge_bouton1" class="wow bounceInDown heartBeat">
+              <div class="logo_bouton" id="marge_bouton1">
                 <a data-scrollTo="formulaire" onclick="navScroll(event)"
-                class="btn waves-effect waves-light black">
+                class="btn waves-effect waves-light">
                 Contact</a>
                 <!--<a onclick="myFunction6()"
                 class="btn waves-effect waves-light black">
