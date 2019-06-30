@@ -37,6 +37,16 @@ cursor: pointer;
   font-size: 2rem;
 }
 
+@mixin formation_experience{
+  h2{
+    font-size: 1.4rem !important;
+  }
+  p{
+    font-size: 1rem !important;
+    line-height: 17px;
+  }
+}
+
 .corpus{
   max-width: 100%;
   display: block;
@@ -139,6 +149,7 @@ header.sticky{
         h2  {
             font-size: 2em !important;
             font-weight: bold;
+            color: $title;
           }
 
         #nom{
@@ -340,7 +351,7 @@ article{
            padding-left: 10%;
            margin-bottom: 8%;
            font-size: 2rem;
-           padding-top: -3%;
+           margin-top: -0.5%;
          }
 
         .line_projects1{
@@ -434,6 +445,8 @@ article{
   .block_formations{
 
     @include blocks_timeline ($light_orange_photoshop_background);
+    @include formation_experience;
+
         h3{
           @include titre_rubriques;
         }
@@ -443,9 +456,6 @@ article{
           height: 100px;
           margin-left: 0%;
         }
-        h4{
-          font-size: 1.5rem;
-        }
 
         #paris_sud{
           margin-left: 20%;
@@ -454,6 +464,7 @@ article{
 
     .block_experiences{
       @include blocks_timeline ($orange2_photoshop);
+      @include formation_experience;
 
           h3{
             //@include titre_rubriques;

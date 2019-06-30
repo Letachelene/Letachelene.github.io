@@ -102,6 +102,7 @@ h1 {
 h2 {
   font-size: 2em !important;
   font-weight: bold;
+  color: #474e5d;
 }
 
 #nom {
@@ -113,7 +114,7 @@ h2 {
   -webkit-animation-delay: 5s ease-in-out;
   -moz-animation-delay: 5s ease-in-out;
   transition-delay: 5s ease-in-out;
-  animation-duration: 3s;
+  animation-duration: 8s;
 }
 
 @-webkit-keyframes fadeIn {
@@ -293,7 +294,7 @@ article {
   padding-left: 10%;
   margin-bottom: 8%;
   font-size: 2rem;
-  padding-top: -3%;
+  margin-top: -0.5%;
 }
 .block_projects .line_projects1 {
   width: 100%;
@@ -375,6 +376,13 @@ article {
   padding-top: 0.1%;
   padding-bottom: 3%;
 }
+.block_formations h2 {
+  font-size: 1.4rem !important;
+}
+.block_formations p {
+  font-size: 1rem !important;
+  line-height: 17px;
+}
 .block_formations h3 {
   width: 100%;
   padding-left: 10%;
@@ -388,9 +396,6 @@ article {
   height: 100px;
   margin-left: 0%;
 }
-.block_formations h4 {
-  font-size: 1.5rem;
-}
 .block_formations #paris_sud {
   margin-left: 20%;
 }
@@ -399,6 +404,13 @@ article {
   background-color: #ffaa01;
   padding-top: 0.1%;
   padding-bottom: 3%;
+}
+.block_experiences h2 {
+  font-size: 1.4rem !important;
+}
+.block_experiences p {
+  font-size: 1rem !important;
+  line-height: 17px;
 }
 .block_experiences h3 {
   display: none;
