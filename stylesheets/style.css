@@ -281,7 +281,7 @@ article {
 
 .block_projects {
   background-color: #FFFD48;
-  padding-top: 5%;
+  margin-top: -2.1%;
   padding-bottom: 10%;
   color: white;
   /*.sous_block_projet{
@@ -292,9 +292,12 @@ article {
 }
 .block_projects h3 {
   padding-left: 10%;
-  margin-bottom: 8%;
-  font-size: 2rem;
-  margin-top: -0.5%;
+  font-size: 3rem;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  color: #474e5d;
+  font-style: bold;
+  font-family: "Ubuntu", sans-serif;
 }
 .block_projects .line_projects1 {
   width: 100%;

@@ -343,15 +343,18 @@ article{
 
       .block_projects{
         background-color: $color_back_light;
-        padding-top: 5%;
+        margin-top: -2.1%;
         padding-bottom: 10%;
         color: white;
 
          h3{
            padding-left: 10%;
-           margin-bottom: 8%;
-           font-size: 2rem;
-           margin-top: -0.5%;
+           font-size: 3rem;
+           padding-top: 5%;
+           padding-bottom: 3%;
+           color: $title;
+           font-style: bold;
+           font-family: 'Ubuntu', sans-serif;
          }
 
         .line_projects1{
