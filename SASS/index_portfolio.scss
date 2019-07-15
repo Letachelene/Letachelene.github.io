@@ -11,14 +11,6 @@ body {
 cursor: pointer;
 }*/
 
-@import url(https://fonts.googleapis.com/css?family=Quando);
-*, *:after, *:before {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  }
-* {margin:0;padding:0;border:0 none;position: relative; outline: none;
-}
-
 
 @mixin bouton_capture{
   width: 390px;
@@ -37,12 +29,81 @@ cursor: pointer;
 }
 
 @mixin titre_rubriques {
-  width: 100%;
-  padding-left: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  color: white;
-  font-size: 2rem;
+
+  @import url(https://fonts.googleapis.com/css?family=Quando);
+  *, *:after, *:before {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  }
+  * {margin:0;padding:0;border:0 none;position: relative; outline: none;
+  }
+
+  h3{
+    font-size: 3rem;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    font-style: bold;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+  }
+  h3 > a {
+    text-decoration: none;
+    color: $title;
+    z-index: 1;
+    padding-bottom: 12px;
+  }
+
+  h3 > a:before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 3px;
+   bottom: 0;
+   left: 0;
+   background: #9CF5A6;
+   visibility: hidden;
+   border-radius: 5px;
+   transform: scalex(0);
+   transition: .25s linear;
+ }
+
+  h3 > a:hover:before,
+  h3 > a:focus:before {
+   visibility: visible;
+   transform: scaleX(1);
+  }
+
+ .underlined > a:after {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 7px;
+   border: 1px solid #000;
+   bottom: -2px;
+   left: 0;
+   background: #fff;
+   border-radius: 5px;
+   opacity: 0;
+   transform: scalex(0);
+   transition: .5s;
+ }
+ .underlined > a:after {
+   opacity: .05;
+   transform: scalex(1);
+ }
+ .underlined:hover > a:after {
+   opacity: .15;
+   transform: scalex(1);
+ }
+ .underlined > a:before {
+   background: rgba(0,0,0,0);
+   box-shadow: 0 0 10px 2px $rouge_photoshop_background;
+ }
+ .underlined > a:before {
+   background: rgba(0,0,0,0);
+   box-shadow: 0 0 10px 2px $rouge_photoshop_background;
+ }
+
 }
 
 @mixin formation_experience{
@@ -216,7 +277,6 @@ article{
   margin-bottom: -10%;
 
 }
-
         #street{
           display: none;
           position: absolute;
@@ -350,82 +410,7 @@ article{
         background-color: $color_back_light;
         margin-top: -3%;
         padding-bottom: 10%;
-        color: white;
-
-         h3{
-           padding-left: 10%;
-           font-size: 3rem;
-           padding-top: 5%;
-           padding-bottom: 3%;
-           color: black;
-           font-style: bold;
-           font-family: 'Ubuntu', sans-serif;
-         }
-
-        h3 > a {
-           text-decoration: none;
-           color: rgba(0,0,0,.4);
-           z-index: 1;
-           padding-bottom: 12px;
-         }
-
-         h3 > a:before {
-           content: "";
-           position: absolute;
-           width: 100%;
-           height: 3px;
-           bottom: 0;
-           left: 0;
-           background: #9CF5A6;
-           visibility: hidden;
-           border-radius: 5px;
-           transform: scaleX(0);
-           transition: .25s linear;
-         }
-         h3 > a:hover:before,
-         h3 > a:focus:before {
-           visibility: visible;
-           transform: scaleX(1);
-         }
-
-         .underlined > a:after {
-           content: "";
-           position: absolute;
-           width: 100%;
-           height: 7px;
-           border: 1px solid #000;
-           bottom: -2px;
-           left: 0;
-           background: #fff;
-           border-radius: 5px;
-           opacity: 0;
-           transform: scalex(0);
-           transition: .5s;
-         }
-         .underlined > a:after {
-           opacity: .05;
-           transform: scalex(1);
-         }
-         .underlined:hover > a:after {
-           opacity: .15;
-           transform: scalex(1);
-         }
-         .underlined > a:before {
-           background: rgba(0,0,0,0);
-           box-shadow: 0 0 10px 2px #FADD40;
-         }
-         .underlined > a:before {
-           background: rgba(0,0,0,0);
-           box-shadow: 0 0 10px 2px #FF5E33;
-         }
-         //projet d'animation du titre
-
-
-
-
-
-
-
+        @include titre_rubriques;
 
 
         .line_projects1{
@@ -520,10 +505,8 @@ article{
 
     @include blocks_timeline ($light_orange_photoshop_background);
     @include formation_experience;
+    @include titre_rubriques;
 
-        h3{
-          @include titre_rubriques;
-        }
 
         img{
           width: 150px;
@@ -579,7 +562,7 @@ article{
           position: absolute;
           width: 2.5px;
           //height: 105%;
-          background-color: white;
+          background-color: $rouge_photoshop_background;
           top: 0;
           bottom: 0;
           left: 50%;
@@ -601,8 +584,8 @@ article{
           width: 25px;
           height: 25px;
           right: -11px;
-          background-color: white;
-          border: 4px solid #FF9F55;
+          background-color: $rouge_photoshop_background;
+          border: 4px solid $rouge_photoshop_background;
           top: 15px;
           border-radius: 50%;
           z-index: 1.5;
@@ -628,7 +611,7 @@ article{
           width: 0;
           z-index: 1.5;
           right: 30px;
-          border: medium solid white;
+          border: medium solid $rouge_photoshop_background;
           border-width: 10px 0 10px 10px;
           border-color: transparent transparent transparent white;
 
@@ -643,7 +626,7 @@ article{
           width: 0;
           z-index: 1.5;
           left: 30px;
-          border: medium solid white;
+          border: medium solid $rouge_photoshop_background;
           border-width: 10px 10px 10px 0;
           border-color: transparent white transparent transparent;
         }
@@ -665,7 +648,7 @@ article{
           background-color: white;
           position: relative;
           border-radius: 6px;
-          border: 2px solid #FF9F55;
+          border: 2px solid $rouge_photoshop_background;
         }
 
         .ligne_container{
@@ -693,11 +676,16 @@ article{
   }
 
   .block_hobbies{
-    background-color: $rouge_photoshop_background;
+    background-color: $color_back_ultralight;
     margin-top: -1.1%;
     flex-direction: column;
     display: flex;
     width: 100%;
+    @include titre_rubriques;
+
+    #hobbies_title{
+      padding-bottom: 7%;
+    }
 
         .block_carrousel{
           width: 100%;
@@ -705,9 +693,6 @@ article{
           display: flex;
         }
 
-          h3{
-            @include titre_rubriques;
-          }
 
           .sous_block_carrousel{
             width:50%;
@@ -772,9 +757,20 @@ article{
         }
   }*/
 
+  #formulaire{
+    background-color: $orange_rouge_photoshop;
+    padding-top: 2%;
+    padding-bottom: 5%;
+  }
+
+  #titre_form{
+        @include titre_rubriques;
+  }
+
+
   .block_form{
     margin-top: 2%;
-    margin-left: 30%;
+    margin-left: 28%;
     margin-right: 20%;
     padding-left: 1.5%;
     padding-right: 5%;
@@ -784,6 +780,7 @@ article{
     width: 45%;
     border-radius: 15px;
     box-shadow: 6px 4px 14px #ccc;
+
 
     .etiquette{
           label{
@@ -806,10 +803,4 @@ article{
     padding: 1%;
     border-radius: 15%;
     font-size: 1.2rem;
-  }
-
-  #formulaire{
-    background-color: $orange_rouge_photoshop;
-    padding-top: 2%;
-    padding-bottom: 5%;
   }

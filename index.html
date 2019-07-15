@@ -43,6 +43,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         style="cursor: pointer;">Expériences</li>
         <li class="navbar" data-scrollTo="hobbies" onclick="navScroll(event)"
         style="cursor: pointer;">Hobbies</li>
+        <li class="navbar" data-scrollTo="formulaire" onclick="navScroll(event)"
+        style="cursor: pointer;">Contact</li>
         <!--Je stocke mon scroll dans une variable avec data (nom de la variable = scrollTo)
             + onclick + nom de la fonction navScroll dans JS avec en paramètre l'EVENT-->
       </ul>
@@ -130,7 +132,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <h3 class="underlined"><a href=''>Quelques projets</a></h3>
           <div class="line_projects1">
             <a href="./projets_example/Accessibility_Semantics/MAQUETTE_FORET.html">
-            <div class="sous_block_projet wow bounceInLeft">
+            <div class="sous_block_projet wow bounceInLeft"
+            data-wow-duration="0.8s" data-wow-delay="0.3s">
                 <button id="maquette_foret"></button>
                 <div class="description_projet">
                   <h4>Accessibilité<br>HTML5/CSS3</h4>
@@ -143,7 +146,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </a>
 
             <a href="./projets_example/Animation/animation_index.htm">
-            <div class="sous_block_projet wow bounceInUp">
+            <div class="sous_block_projet wow bounceInUp"
+              data-wow-duration="0.8s" data-wow-delay="0.3s">
               <button id="maquette_animation"></button>
               <div class="description_projet">
                 <h4>Animations CSS<br>HTML5/CSS3</h4>
@@ -156,7 +160,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </a>
 
             <a href="./projets_example/c1web104p6/materialize_batman.html">
-            <div class="sous_block_projet wow bounceInRight">
+            <div class="sous_block_projet wow bounceInRight"
+              data-wow-duration="0.8s" data-wow-delay="0.3s">
                 <button id="maquette_materialize"></button>
                 <div class="description_projet">
                   <h4>Materialize</h4>
@@ -170,7 +175,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
           <div class="line_projects2">
             <a href="./projets_example/c1web104p9/gsap.html">
-            <div class="sous_block_projet wow bounceInLeft">
+            <div class="sous_block_projet wow bounceInLeft"
+            data-wow-duration="0.8s" data-wow-delay="0.3s">
                 <button id="maquette_gsap"></button>
                 <div class="description_projet">
                   <h4>Animations GSAP</h4>
@@ -183,7 +189,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </a>
 
             <a href="./projets_example/my_snapchat/my_snapchat_Inscription.html">
-            <div class="sous_block_projet wow bounceInDown">
+            <div class="sous_block_projet wow bounceInDown"
+              data-wow-duration="0.8s" data-wow-delay="0.3s">
                 <button id="maquette_snapchat"></button>
                 <div class="description_projet">
                   <h4>Appli Snapchat</h4>
@@ -196,7 +203,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
             </a>
 
-            <div class="sous_block_projet wow bounceInRight">
+            <div class="sous_block_projet wow bounceInRight"
+              data-wow-duration="0.8s" data-wow-delay="0.3s">
                 <button id="maquette_spotify"></button>
                 <div class="description_projet">
                   <h4>Appli avec Spotify</h4>
@@ -212,8 +220,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </section>
 
     <section id="formations" class="block_formations">
-        <h3>Ma formation</h3>
-            <div class="timeline wow bounceInUp">
+      <h3 class="underlined"><a href=''>Ma formation</a></h3>
+            <div class="timeline wow bounceInUp"
+            data-wow-duration="0.4s" data-wow-delay="0.4s">
                 <div class="ligne_container">
                   <div class="container left">
                     <article class="content">
@@ -269,8 +278,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </section>
 
     <section id="experiences" class="block_experiences">
-            <h3>Mon expérience professionnelle</h3>
-              <div class="timeline wow bounceInUp">
+            <h3 class="underlined"><a href=''>Mon expérience professionnelle</a></h3>
+              <div class="timeline wow bounceInUp"
+              data-wow-duration="0.4s" data-wow-delay="0.4s">
                 <div class="ligne_container">
                   <div class="container left">
                     <article class="content">
@@ -323,7 +333,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
     <section id="hobbies" class="block_hobbies">
-      <h3>Mes hobbies (CI-DESSOUS, CARROUSEL A VENIR)</h3>
+      <h3 class="underlined" id="hobbies_title"><a href=''>Mes hobbies</a></h3>
       <div class="block_carrousel">
       <div class="sous_block_carrousel">
         <div class="carousel">
@@ -353,7 +363,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </div>
     </section>
 
-    <div id="formulaire">
+    <section id="formulaire">
+      <div id="titre_form">
+      <h3 class="underlined"><a href=''>Me contacter</a></h3>
+      </div>
       <div class="row block_form col s12">
          <form method="POST" onsubmit="sendForm();"
          action="https://formspree.io/contact.heleneletac@gmail.com">
@@ -399,7 +412,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                 }
               </script>
         </form>
-    </div>
+    </section>
 
   </div>
 </body>
