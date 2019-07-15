@@ -506,6 +506,7 @@ article{
     @include blocks_timeline ($top_light_yellow_background);
     @include formation_experience;
     @include titre_rubriques;
+    padding-bottom: 0%;
 
 
         img{
@@ -522,10 +523,10 @@ article{
     .block_experiences{
       @include blocks_timeline ($top_light_yellow_background);
       @include formation_experience;
+      @include titre_rubriques;
 
           h3{
-            //@include titre_rubriques;
-            display: none;
+              padding-top: 2%;
           }
 
 
@@ -613,7 +614,7 @@ article{
           right: 30px;
           border: medium solid $rouge_photoshop_background;
           border-width: 10px 0 10px 10px;
-          border-color: transparent transparent transparent white;
+          border-color: transparent transparent transparent  $rouge_photoshop_background;
 
         }
 
@@ -628,7 +629,7 @@ article{
           left: 30px;
           border: medium solid $rouge_photoshop_background;
           border-width: 10px 10px 10px 0;
-          border-color: transparent white transparent transparent;
+          border-color: transparent  $rouge_photoshop_background transparent transparent;
         }
 
         /* Je fixe un cercle sur le côté droite des containers */
