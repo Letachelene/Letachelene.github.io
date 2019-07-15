@@ -439,7 +439,7 @@ article {
 }
 
 .block_formations {
-  background-color: #fd7d22;
+  background-color: #FFFFCB;
   padding-top: 0.1%;
   padding-bottom: 3%;
   @import url(https://fonts.googleapis.com/css?family=Quando);
@@ -534,7 +534,7 @@ article {
 }
 
 .block_experiences {
-  background-color: #ffaa01;
+  background-color: #FFFFCB;
   padding-top: 0.1%;
   padding-bottom: 3%;
 }

@@ -503,7 +503,7 @@ article{
 
   .block_formations{
 
-    @include blocks_timeline ($light_orange_photoshop_background);
+    @include blocks_timeline ($top_light_yellow_background);
     @include formation_experience;
     @include titre_rubriques;
 
@@ -520,7 +520,7 @@ article{
     }
 
     .block_experiences{
-      @include blocks_timeline ($orange2_photoshop);
+      @include blocks_timeline ($top_light_yellow_background);
       @include formation_experience;
 
           h3{
